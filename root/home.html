@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title> Home</title>
+
+       <script src = "https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <main id = "content">
+
+     
+    <h3 id = "homeh3"> Enter a Television show that your interested in than attain information about it!</h3>
+      
+   
+
+    <div id = "center">
+    <input type="text" id = "homePageInput" placeholder="Enter a TV show...">
+    <button onclick="findOutInformation()" id = "homePageBtn">Find Out Information</button>
+
+     <div id = "moveToRight">
+      <button onclick="signOutUser()" id="signOutBtn">Sign Out</button>
+        <button onclick ="myList()" id= "addToList">My List</button>
+    </div>
+    </div>
+  
+
+    <div id="mainContainer"></div>
+    </main>
+
+
+ 
+
+    <script src ="script.js"></script>
+</body>
+</html>

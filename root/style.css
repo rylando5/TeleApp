@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, main, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------End Of erics reset----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles for the home page*/
+
+/* For the home heading */
+#homeh3{
+    font-family: 'Segoe UI';
+    padding:0.9rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color:#22AE9F;
+    font-weight: bold;
+    
+}
+
+/*For the home page input box*/
+#center{
+    padding:1.2rem 0;
+    margin-left: 10%;
+    align-items: center;
+  
+}
+#homePageInput{
+    width:17rem;
+    height:1.5rem;
+    border-radius: 3px;
+}
+
+#homePageBtn{
+background-color:#22AE9F;
+border-radius: 9px;
+color:white;
+border: none;
+padding: 0.5rem;
+
+}
+#homePageBtn:hover{
+    background-color: green;
+}
+/*For the buttons to the right on the home page*/
+#moveToRight{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-right:2rem;
+}
+
+#signOutBtn{
+   margin-bottom: 0.5rem;
+   padding:0.5rem 0.7rem;
+   background-color:#22AE9F;
+   border-radius: 2px;
+   border:none;
+   color:white;
+   margin-right:auto;
+   justify-self: right;
+}
+#signOutBtn:hover{
+    background-color: green;
+}
+
+#addToList{
+    background-color:#6558F5;
+    color:white;
+    border:none;
+    padding:0.5rem 0.7rem;
+    border-radius: 2px;
+}
+
+#addToList:hover{
+    background-color:#C285FE;
+}
+
+/*End of home page button styles*/
+
+
+/*-------Styles for the mainContentDivs----------*/
+
+
+/*main content container*/
+.mainContainer{
+    width:80vw;
+    justify-content: center;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+/*second container div */
+.mainContainer1{
+   margin:0.9rem;
+   border-radius: 20px;
+}
+
+/*initial content div*/
+.mainContainer2{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    background-color:#8DD7CF ;
+    padding: 2rem;
+}
+
+/*Title of the show*/
+.showTitle{
+   padding-bottom: 0.5rem;
+   font-size: 2rem;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+}
+
+/*Premier date*/
+.premierDate{
+   padding-bottom: 0.5rem;
+   font-size: 1.7rem;
+}
+
+/*Genre Of Show*/
+.genres{
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/*Country Orgin*/
+.country{
+padding-bottom: 0.5rem;
+font-size: 1.5rem;
+}
+
+/*Rating*/
+.rating{
+padding-bottom: 0.5rem;
+font-size: 1.3rem;
+}
+
+/*averaeg Runtime*/
+.runtime{
+padding-bottom: 0.5rem;
+font-size: 1.3rem;
+}
+
+/*Current status*/
+.status{
+padding-bottom: 0.5rem;
+font-size: 1.3rem;
+
+}
+
+/*Type of Show*/
+.typeOfShow{
+padding-bottom: 0.5rem;
+font-size: 1.3rem;
+}
+
+/*Plot Summary*/
+.summary{
+padding-bottom: 0.7rem;
+
+}
+
+/*Link for site*/
+.siteLink{
+grid-column: 2/6;
+grid-row:11/12;
+font-size: 1.3rem;
+text-decoration: none;
+}
+
+.textContainer{
+    grid-column:1/8;
+}
+
+.imgContainer{
+    grid-column: 9/13;
+    text-align: center;
+ 
+}
+
+/*Remove In the Div*/
+.removeBtnInDiv{
+grid-column:10/11;
+grid-row:2/3;
+background-color:#D3455B;
+color:white;
+border:none;
+margin-bottom: 1rem;
+padding:0.5rem 0.7rem;
+border-radius: 2px;
+
+}
+
+/*Adding button to list*/
+.addListButtonInDIv{
+grid-column: 10/11;
+grid-row:10/12;
+margin-top:1rem;
+padding:0.5rem 0.7rem;
+background-color: #6558F5;
+color:white;
+border-radius: 2px;
+border: none;
+
+}
+.addListButtonInDIv:hover{
+background-color: green;
+}
+
+
+/*General Image for show*/
+.image{
+max-width: 100%;
+width:80vh;
+grid-column: 8/12;
+grid-row: 2/10;
+
+}
+
+/* End of styles for home page!--------------------------- */
+
+
+@media only screen and (max-width: 1000px){
+    .imgContainer{
+        max-width: 300px;
+        grid-column: 1/12;
+        justify-content: center;
+    }
+
+    .textContainer{
+      
+        grid-column: 1/12;
+    }
+
+    .removeBtnInDiv{
+    grid-column:10/11;
+    grid-row:2/3;
+    background-color:#D3455B;
+    color:white;
+    border:none;
+   
+    
+    }
+
+
+    .summary{
+        grid-column: 2/7;
+        grid-row:4/5;
+    }
+
+
+}
+
+
+
+/* ------------------Styles for Log in Page!------------------ */
+
+#TeleAppLogInLogo{
+    color:#22AE9F;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+#TeleAppLogInDisplay{
+    margin-bottom: 1.2rem;
+    color:#22AE9F;
+    font-size: 2rem;
+}
+
+#logInInputsDiv{
+    margin: 0 auto;
+    margin-top:12rem;
+    display:flex;
+    flex-direction: column;
+    width:20vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signUpBtnOnLogIn{
+    padding:0.5rem 0.7rem;
+    background-color: #6558F5;
+    border-radius: 2px;
+    color:white;
+    border:none;
+}
+#signUpBtnOnLogIn:hover{
+    background-color: #C285FE;
+}
+
+#logInEmail{
+  width:12rem;
+  height:1.5rem;
+}
+
+#logInPassword{
+   width:12rem;
+   height:1.5rem;
+   margin-top: 1rem;
+  
+}
+
+
+
+#logInBtn{
+   margin:1.2rem;
+   padding:0.5rem 0.8rem;
+   background-color:#22AE9F ;
+   color:white;
+   border:none;
+   border-radius: 2px;
+}
+
+#logInBtn:hover{
+    background-color: green;
+}
+
+
+main{
+    position: relative;
+}
+
+#totheright{
+    
+    position: absolute;
+    top: 3rem;
+    right:3rem;
+   
+}
+
+
+
+
+/* -------------Styles for the sign up page--------------- */
+
+#signUpPageh3{
+    color:#22AE9F;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+#signUpPageDiv{
+    display: flex;
+    flex-direction: column;
+    width:20vw;
+    margin: 0 auto;
+    margin-top:12rem;
+    display:flex;
+    flex-direction: column;
+    width:20vw;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#signUpPassword{
+    width:12rem;
+    height:1.5rem;
+    margin-top: 1rem;
+}
+
+#signUpEmail{
+    width:12rem;
+    height:1.5rem;
+    
+}
+
+#signUpPageBtn{
+    margin:1.2rem;
+    padding:0.5rem 0.8rem;
+    background-color:#22AE9F ;
+    color:white;
+    border:none;
+    border-radius: 2px;
+}
+
+/*-------------Styles for List page-------------- */
+
+#listText{
+    color:#22AE9F;
+    margin-left:7rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+#backButton{
+    margin-left: 1.5rem;
+    padding:0.5rem 0.9rem;
+    background-color: #6558F5;
+    border-radius: 2px;
+    color:white;
+    border:none;
+
+}
+
+#backButton:hover{
+    background-color: #C285FE;
+}
+
+#signOutBtnOnListPage{
+    float:right;
+    margin-right: 4rem;
+    padding:0.5rem 0.7rem;
+    background-color:#22AE9F;
+    border-radius: 2px;
+    border:none;
+    color:white;
+}
+
+#signOutBtnOnListPage:hover{
+background-color: green;
+}
+
+#listDiv{
+    margin:0.9rem 4rem;
+ 
+   
+   
+}
+
+.listremoveBtnforListPage{
+    background-color: #D3455B;
+    border:none;
+    color:white;
+    padding:0.4rem;
+    float:right;
+    padding:0.6rem;
+    border-radius: 4px;
+}
+.listremoveBtnforListPage:hover{
+    background-color: red;
+}
+.listPageShowTitles{
+    font-family: 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 0.5rem;
+    color:white;
+    font-size: 1.8rem;
+    text-align:center;
+    display:inline;
+    margin-bottom:1px;
+}
+
+.divOnListPage{
+    margin: 0.9rem;
+    border: 1px solid white;
+    background-color: #22AE9F;
+    padding:1.3rem;
+    border-radius: 8px;
+}
+
+
+
